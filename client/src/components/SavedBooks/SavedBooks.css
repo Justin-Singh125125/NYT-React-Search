@@ -1,0 +1,17 @@
+.card{
+    display: flex;
+}
+.text-right{
+    justify-content: flex-end;
+    margin-top: -40px;
+}
+button{
+    margin-right: 4px;
+}
+
+.card-body{
+    display: flex;
+}
+.results-text{
+    padding: 20px;
+}

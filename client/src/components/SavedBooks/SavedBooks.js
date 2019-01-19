@@ -1,18 +1,17 @@
 import React from 'react';
-import "./BookResults.css";
+import "./SavedBooks.css";
 
-export default function BookResults(props) {
+export default function SavedBooks(props) {
     return (
         <div>
             <div className="card">
-
                 <div className="card-header">
                     <h2>{props.title}</h2>
                     <div className="text-right">
                         <a href={props.href} target="_blank" rel="noopener noreferrer">
                             <button type="button" className="btn btn-success">View</button>
                         </a>
-                        <button onClick={() => props.handleSavingBooks(props.title, props.publisher, props.image, props.description, props.href)} type="button" className="btn btn-info">Save</button>
+                        <button onClick={() => props.handleBookDelete(props.id)} type="button" className="btn btn-danger">Delete</button>
                     </div>
                     <small>Published by {props.publisher}</small>
                 </div>
